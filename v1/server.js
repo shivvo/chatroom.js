@@ -29,7 +29,7 @@ app.post('/sendMessage', function (req, res) {
 
 app.get('/allMessages', function (req, res) {
   var formattedMessages = database.map(function (e) {
-    return e.sender + " (" + e.timestamp + "): " + e.content;
+    return e.timestamp.toString() + ": " + e.sender + " > " + e.content;
   });
   var allMessagesString = formattedMessages.join("\n") + "\n";
   res.send(allMessagesString);
