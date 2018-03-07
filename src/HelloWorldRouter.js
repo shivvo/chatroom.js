@@ -9,7 +9,7 @@ class HelloWorldRouter extends AbstractRouter {
   }
 
   async content(request: Request): Promise<any> {
-    return 'hello, world\n';
+    return 'hello, world!\n';
   }
 
 }
