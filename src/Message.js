@@ -13,7 +13,14 @@ class Message {
   }
 
   toString(): string {
-    return this.timestamp.toLocaleFormat("%B %e, %Y, %r") + ": " + this.sender + " > " + this.content;
+    let day = this.timestamp.getDate();
+    let monthIndex = this.timestamp.getMonth() + 1;
+    let year = this.timestamp.getFullYear();
+    let hours = this.timestamp.getHours();
+    let minutes = this.timestamp.getMinutes();
+    let amPm = hours >= 12 ? "PM" : "AM";
+    let timeString = monthIndex + "/" + day + "/" + year + " " + hours + ":" + minutes + " " + amPm;
+    return timeString + ": " + this.sender + " > " + this.content;
   }
 
 }

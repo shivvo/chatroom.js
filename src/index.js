@@ -24,4 +24,4 @@ const onListening = (): void => {
 
 server.on('error', onError);
 server.on('listening', onListening);
-server.listen(20000);
+server.listen(process.env.PORT || 20000);
