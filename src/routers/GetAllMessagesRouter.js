@@ -1,7 +1,7 @@
 // @flow
 
-import AbstractRouter from './AbstractRouter';
-import Database from './Database';
+import AbstractRouter from '../utils/AbstractRouter';
+import Database from '../Database';
 
 class GetAllMessagesRouter extends AbstractRouter {
   

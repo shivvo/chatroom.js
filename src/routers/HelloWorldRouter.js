@@ -1,6 +1,6 @@
 // @flow
 
-import AbstractRouter from './AbstractRouter';
+import AbstractRouter from '../utils/AbstractRouter';
 
 class HelloWorldRouter extends AbstractRouter {
   

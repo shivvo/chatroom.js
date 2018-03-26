@@ -2,10 +2,10 @@
 import http from 'http';
 import express, {Application, Request, Response} from 'express';
 import bodyParser from 'body-parser';
-import HelloWorldRouter from './HelloWorldRouter';
-import PostSendMessageRouter from './PostSendMessageRouter';
-import GetAllMessagesRouter from './GetAllMessagesRouter';
-import Api from './Api';
+import HelloWorldRouter from './routers/HelloWorldRouter';
+import PostSendMessageRouter from './routers/PostSendMessageRouter';
+import GetAllMessagesRouter from './routers/GetAllMessagesRouter';
+import Api from './utils/Api';
 
 const api: Api = new Api('', [bodyParser.json()], [HelloWorldRouter, PostSendMessageRouter, GetAllMessagesRouter]);
 

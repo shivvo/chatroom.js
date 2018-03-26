@@ -1,8 +1,8 @@
 // @flow
 import { Request } from 'express';
-import AbstractRouter from './AbstractRouter';
-import Message from './Message';
-import Database from './Database';
+import AbstractRouter from '../utils/AbstractRouter';
+import Message from '../Message';
+import Database from '../Database';
 
 class PostSendMessageRouter extends AbstractRouter {
   

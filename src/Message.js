@@ -13,7 +13,7 @@ class Message {
   }
 
   toString(): string {
-    return this.timestamp.toString() + ": " + this.sender + " > " + this.content;
+    return this.timestamp.toLocaleFormat("%B %e, %Y, %r") + ": " + this.sender + " > " + this.content;
   }
 
 }
